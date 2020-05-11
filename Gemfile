@@ -20,6 +20,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'devise'
+gem 'devise-bootstrap-views', '~> 1.0'
+gem "font-awesome-rails"
+gem 'table_print', '~> 1.5', '>= 1.5.6'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -33,6 +38,7 @@ group :development, :test do
 end
 
 group :development do
+   gem 'better_errors'
   gem 'sqlite3', '~> 1.4'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'

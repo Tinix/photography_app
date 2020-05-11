@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PhotographyApp</title>
+    <title><%= Rails.configuration.application_name %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+      <%= render 'layouts/navbar' %>
+       
+      <%= render 'layouts/sidebar' %>
+      <%= render 'layouts/footer' %>
   </body>
 </html>

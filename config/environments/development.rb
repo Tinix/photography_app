@@ -56,13 +56,9 @@ Rails.application.configure do
   Rails.application.routes.default_url_options[:host] = 'lvh.me'
   Rails.application.routes.default_url_options[:port] = 3000
   config.hosts << "lvh.me"
-  config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = { host:'lvh',  port:'3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host:'lvh',  port:'3000', protocol: 'http' }
 
-  # Raises error for missing translations.
-  # config.action_view.raise_on_missing_translations = true
-
-  # Use an evented file watcher to asynchronously detect changes in source code,
-  # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
 end

@@ -57,7 +57,7 @@ Rails.application.configure do
   Rails.application.routes.default_url_options[:port] = 3000
   config.hosts << "lvh.me"
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host:'lvh',  port:'3000', protocol: 'http' }
+  config.action_mailer.default_url_options = { host: 'localhost',  port:'3000', protocol: 'http' }
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 

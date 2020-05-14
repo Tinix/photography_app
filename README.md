@@ -34,3 +34,15 @@ Things you may want to cover:
 ```bash
 rails db:create && rails db:migrate
 ```
+then 
+
+```
+rails s
+```
+
+* oper your web browser
+
+[http://lvh.me:3000](http://lvh.me:3000)
+
+
+

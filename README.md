@@ -5,7 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.2
+
+* rails version 6.0.3
+
+* node version 14.2.0
+
+* yarn version 1.22.4
 
 * System dependencies
 
@@ -22,3 +28,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* after download
+
+```bash
+rails db:create && rails db:migrate
+```

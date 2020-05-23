@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+
+<dl class="dl-horizontal">
+  <%= @image.name %>
+    <dt></dt>
+<dd><%= image_tag(@image.picture.url, size:"300x300") if @image.picture? %></dd>
+
+</dl>
+
+
+<%= link_to 'Back', images_path, class: 'btn btn-primary btn-sm' %>
+<%= link_to 'Edit', edit_image_path(@image), class: 'btn btn-success btn-sm' %>
+<%= link_to 'Destroy', @image, method: :delete, data: {confirm: "Are you sdure delete this image?"}, class: 'btn btn-danger btn-sm' %>

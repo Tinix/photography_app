@@ -24,6 +24,10 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem "font-awesome-rails"
 gem 'table_print', '~> 1.5', '>= 1.5.6'
 gem 'stripe', '~> 5.22'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
